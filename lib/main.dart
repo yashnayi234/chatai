@@ -6,7 +6,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final storage = FlutterSecureStorage();
-  final String apiKey = await storage.read(key: 'sk-proj-oSHWkJLz4Oqi0i91qdsHT3BlbkFJrft1Ln8Yz0yRhGIAd3Ik') ?? '';
+  final String apiKey = await storage.read(key: 'test your api key') ?? '';
   // await dotenv.load(fileName: "./.env");
   runApp(MyApp(apiKey: apiKey));
 }
